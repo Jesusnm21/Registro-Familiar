@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro Familiar</title>
+    <!-- Vinculación de un archivo CSS externo para aplicar estilos -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Título principal de la página -->
+    <h1>Registro Familiar</h1>
+
+    <!-- Formulario para registrar un nuevo familiar -->
+    <form action="http://localhost/EjerciciosPHPyBD/registrar.php" method="POST" enctype="multipart/form-data">
+        <!-- Campo para ingresar el nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <!-- Campo para ingresar el parentesco -->
+        <label for="parentesco">Parentesco:</label>
+        <input type="text" name="parentesco" id="parentesco" required>
+
+        <!-- Campo para subir una foto -->
+        <label for="foto">Foto:</label>
+        <input type="file" name="foto" id="foto" accept="image/*" required>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Registrar</button>
+    </form>
+    
+    <!-- Contenedor para los botones de acciones adicionales -->
+    <div class="botones">
+        <div class="button-group">
+            <!-- Enlaces a diferentes funcionalidades: Consultar, Eliminar y Modificar -->
+            <a href="http://localhost/EjerciciosPHPyBD/consultar.php">
+                <button type="submit">Consultar</button>
+            </a>
+            <a href="http://localhost/EjerciciosPHPyBD/eliminar.php">
+                <button type="submit">Eliminar</button>
+            </a>
+            <a href="http://localhost/EjerciciosPHPyBD/modificar.php">
+                <button type="submit">Modificar</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
